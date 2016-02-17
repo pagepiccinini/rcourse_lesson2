@@ -1,0 +1,72 @@
+MAKE DIRECTORY
+make folders on computer:
+1) data, 2) scripts, 3) figures, 4) write_up
+--> put data in folder
+
+
+ZOOM IN!!!!!!!
+
+
+MAKE PROJECT
+Mac: File —> New Project… —> Existing Directory —> Browse —> [go to folder] —> Create Project
+
+Windows: File —> New Project… —> Existing Directory —> Browse —> [go to folder] —> Create Project —> [project name in sidebar] —> 
+
+see project name in sidebar
+
+
+INITIALIZE GIT
+Mac: Project Options —> Git /SVN —> Version control system —> Git —> Okay to restarting
+
+Windows: Project Options —> Git /SVN —> Version control system —> Git —> Okay to restarting
+
+see git logo in top menu
+
+
+.GITIGNORE
+--> be sure to talk about it below
+
+
+SAVE PROJECT TO GIT
+Git —> Commit… —> Click boxes for staging —> Commit message —> “Initial commit.” —> Commit
+--> note about accepting bitbucket message if hadn't previously
+
+
+CREATE NEW REPOSITORY ON BITBUCKET
+Log into Bitbucket —> Repositories —> Create repository —> Fill in information —> Create repository —> I have an existing project —> use git instructions FILL IN PASSWORD AND USERNAME FOR BITBUCKET
+
+--> for mac users you can just do More --> Shell...
+—-> for windows users, right click on folder “Git Bash Here”
+
+
+CLEANING SCRIPT
+[look at script]
+
+
+COMMIT CLEANING SCRIPT / PUSH TO BITBUCKET
+
+
+FIGURE SCRIPT
+[look at script]
+
+
+COMMIT FIGURE SCRIPT / PUSH TO BITBUCKET
+
+
+STATISTICS SCRIPT
+[look at script]
+
+
+COMMIT STATISTICS SCRIPT / PUSH TO BITBUCKET
+
+
+
+SAVE ENVIRONMENT TO WRITE UP FOLDER
+Environment —> image of save disk —> navigate to write_up folder
+don’t have to give same type of file location b/c R Markdown resets
+
+
+MAKE WRITE-UP
+
+
+COMMIT WRITE-UP SCRIPT / PUSH TO BITBUCKET

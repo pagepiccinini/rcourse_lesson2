@@ -18,21 +18,33 @@ name.plot = ggplot(data_figs, aes(x = prop)) +
   # Make the figure a histogram
   geom_histogram()
 
+# Write figure to a pdf in the 'figures' folder
+pdf("figures/name.pdf")
 name.plot
+# Close pdf call
+dev.off()
 
 # Histogram of dependent variable (number of 'Page's) - e based log transform
 name_loge.plot = ggplot(data_figs, aes(x = prop_loge)) +
   # Make the figure a histogram
   geom_histogram()
 
+# Write figure to a pdf in the 'figures' folder
+pdf("figures/name_loge.pdf")
 name_loge.plot
+# Close pdf call
+dev.off()
 
 # Histogram of dependent variable (number of 'Page's) - 10 based log transform
 name_log10.plot = ggplot(data_figs, aes(x = prop_log10)) +
   # Make the figure a histogram
   geom_histogram()
 
+# Write figure to a pdf in the 'figures' folder
+pdf("figures/name_log10.pdf")
 name_log10.plot
+# Close pdf call
+dev.off()
 
 # Proportion of 'Page's by year (continuous predictor)
 year.plot = ggplot(data_figs, aes(x = year, y = prop_log10)) +
@@ -41,11 +53,11 @@ year.plot = ggplot(data_figs, aes(x = year, y = prop_log10)) +
   # Add a regression line, 'lm' call makes it linear regression
   geom_smooth(method="lm") +
   # Add a title
-  ggtitle("Proportion of People with the Name 'Page'\nOver Time") +
+  ggtitle("Proportion of People with\nthe Name 'Page' Over Time") +
   # Customize the x-axis
   xlab("Year") +
   # Customize the y-axis
-  ylab("Proportion of People\n(log 10 transformed)") +
+  ylab("Proportion of People\n(log base 10 transformed)") +
   # Remove dark background
   theme_bw() +
   # Additional paramaters for displaying plot
@@ -56,9 +68,11 @@ year.plot = ggplot(data_figs, aes(x = year, y = prop_log10)) +
         legend.position="none", legend.key=element_blank(),
         strip.background = element_rect(color="white", fill="white"))
 
+# Write figure to a pdf in the 'figures' folder
 pdf("figures/year.pdf")
 # Call plot
 year.plot
+# Close pdf call
 dev.off()
 
 # Proportion of 'Page's by sex (categorical predictor)
@@ -66,11 +80,11 @@ sex.plot = ggplot(data_figs, aes(x = sex, y = prop_log10)) +
   # Make the figure a boxplot
   geom_boxplot(aes(fill = sex)) +
   # Add a title
-  ggtitle("Proportion of People with the Name 'Page'\nBy Sex") +
+  ggtitle("Proportion of People with\nthe Name 'Page' By Sex") +
   # Customize the x-axis
   xlab("Sex") +
   # Customize the y-axis
-  ylab("Proportion of People\n(log 10 transformed)") +
+  ylab("Proportion of People\n(log base 10 transformed)") +
   # Remove dark background
   theme_bw() +
   # Additional paramaters for displaying plot
@@ -81,5 +95,9 @@ sex.plot = ggplot(data_figs, aes(x = sex, y = prop_log10)) +
         legend.position="none", legend.key=element_blank(),
         strip.background = element_rect(color="white", fill="white"))
 
+# Write figure to a pdf in the 'figures' folder
+pdf("figures/sex.pdf")
 # Call plot
 sex.plot
+# Close pdf call
+dev.off()
