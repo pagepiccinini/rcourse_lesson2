@@ -42,3 +42,8 @@ To test if there is a significant effect of sex a linear model was built. Propor
 ```{r}
 sex.lm_sum
 ```
+
+
+# Conclusion
+
+The name "Page" has had pretty steady popularity over time but is more common in females than males.

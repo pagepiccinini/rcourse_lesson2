@@ -22,7 +22,7 @@ data_clean = data %>%
   mutate(prop_log10 = log10(prop))
 
 # Confirm the name you've chosen is there (if it is not the number of rows will be 0)
-dim(data_clean)
+head(data_clean)
 
 # Double check only one name chosen
 xtabs(~name, data_clean)
