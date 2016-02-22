@@ -15,7 +15,7 @@ I looked at how common my name, "Page", is in the United States population both 
 
 # Results
 
-## Prevelence by Year
+## Prevalence by Year
 
 Below is a plot for how the proportion of people with the name "Page" (log-transformed) has changed over time. Over the trend is pretty flat, with maybe a slight increase over time.
 
@@ -29,7 +29,7 @@ To test if there is a significant effect of year a linear model was built. Propo
 year.lm_sum
 ```
 
-## Prevelence by Sex
+## Prevalence by Sex
 
 Below is a plot for the proportion of people with the name "Page" (log-transformed) by sex. It appears there is a clear effect of sex, where it is a less popular name for males than females.
 
