@@ -59,14 +59,9 @@ year.plot = ggplot(data_figs, aes(x = year, y = prop_log10)) +
   # Customize the y-axis
   ylab("Proportion of People\n(log base 10 transformed)") +
   # Remove dark background
-  theme_bw() +
+  theme_classic() +
   # Additional paramaters for displaying plot
-  theme(text=element_text(size=18), title=element_text(size=18),
-        panel.border = element_blank(),
-        panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-        axis.line = element_line(colour = "black"),
-        legend.position="none", legend.key=element_blank(),
-        strip.background = element_rect(color="white", fill="white"))
+  theme(text=element_text(size=18), title=element_text(size=18))
 
 # Write figure to a pdf in the 'figures' folder
 pdf("figures/year.pdf")
@@ -86,14 +81,10 @@ sex.plot = ggplot(data_figs, aes(x = sex, y = prop_log10)) +
   # Customize the y-axis
   ylab("Proportion of People\n(log base 10 transformed)") +
   # Remove dark background
-  theme_bw() +
+  theme_classic() +
   # Additional paramaters for displaying plot
   theme(text=element_text(size=18), title=element_text(size=18),
-        panel.border = element_blank(),
-        panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-        axis.line = element_line(colour = "black"),
-        legend.position="none", legend.key=element_blank(),
-        strip.background = element_rect(color="white", fill="white"))
+        legend.position="none", legend.key=element_blank())
 
 # Write figure to a pdf in the 'figures' folder
 pdf("figures/sex.pdf")
